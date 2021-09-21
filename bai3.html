@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+</head>
+<body>
+    <script>
+         var month = parseInt(prompt("Nhập vào tháng = "));
+         var yrs = parseInt(prompt("Nhập vào năm = "));
+         switch (month) {
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                document.write("Month have 31 days!");
+                break;
+            case 6: case 9: case 11: case 4:
+                document.write("Month have 30 days!");
+                break;
+            case 2:
+                if (yrs % 4 == 0) {
+                    document.write("Month have 29 days!");
+                    break;
+                } else {
+                    document.write("Month have 28 days!");
+                    break;
+                }
+            default:
+                document.write("Bạn nhập vào chưa đúng số tháng!");
+                break;
+         }
+    </script>
+</body>
+</html>

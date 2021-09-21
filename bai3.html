@@ -12,17 +12,17 @@
          var yrs = parseInt(prompt("Nhập vào năm = "));
          switch (month) {
             case 1: case 3: case 5: case 7: case 8: case 10: case 12:
-                document.write("Month have 31 days!");
+                document.write("Month has 31 days!");
                 break;
             case 6: case 9: case 11: case 4:
-                document.write("Month have 30 days!");
+                document.write("Month has 30 days!");
                 break;
             case 2:
                 if (yrs % 4 == 0) {
-                    document.write("Month have 29 days!");
+                    document.write("Month has 29 days!");
                     break;
                 } else {
-                    document.write("Month have 28 days!");
+                    document.write("Month has 28 days!");
                     break;
                 }
             default:
